@@ -18,7 +18,7 @@ function _apu() {
 }
 
 function _countext() {
-    find . -type f | rev | cut -d '/' -f1 | fgrep '.' | cut -d '.' -f1 | rev | uniq -c | sort -n
+    find . -type f | rev | cut -d '/' -f1 | fgrep '.' | cut -d '.' -f1 | rev | sort | uniq -c | sort -n
 }
 
 
